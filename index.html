@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>web Louvre</title>
+    <!-- custom font icon  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- custom swiper  -->
+    <link
+      href="https://www.cssscript.com/wp-includes/css/sticky.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- custom fontgoogle  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom link css  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <!-- custom tailwindcs  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- -left-[100%] -->
+    <!-- left-0 -->
+    <menu id="menu" class="md:w-[50%] w-full p-8 shadow-md rounded-md md:h-[53rem] absolute z-40 top-16 bg-slate-900">
+      <!-- menu header  -->
+      <div class="w-full relative mb-6">
+        <span class="material-symbols-outlined absolute left-2 top-4 text-2xl">
+          search
+          </span>
+          <input type="text" class="text-xl border-none outline-none w-full text-slate-700 py-4 px-16 bg-slate-100 rounded-md">
+          <span class="material-symbols-outlined absolute right-2 top-3 cursor-pointer text-2xl py-1 px-3 rounded-md bg-slate-300">
+            arrow_forward
+            </span>
+      </div>
+      <hr>
+      <div class="w-full mb-6 py-8 px-16 flex flex-col justify-start gap-8">
+        <a href="" class="text-2xl flex justify-between items-center text-slate-300 uppercase hover:scale-105 hover:ease-in hover:duration-300">
+          <span>home</span>
+        </a>
+        <a href="#" class="text-2xl flex justify-between items-center text-slate-300 uppercase hover:scale-105 hover:ease-in hover:duration-300">
+          <span>visit</span>
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </a>
+        <a href="#" class="text-2xl flex justify-between items-center text-slate-300 uppercase hover:scale-105 hover:ease-in hover:duration-300">
+          <span>explore</span>
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </a>
+        <a href="#" class="text-2xl flex justify-between items-center text-slate-300 uppercase hover:scale-105 hover:ease-in hover:duration-300">
+          <span>what's on</span>
+          <span class="material-symbols-outlined">
+            chevron_right
+            </span>
+        </a>
+      </div>
+      <hr>
+      <div class="w-full flex flex-col md:flex md:justify-between items-center gap-5 py-10 px-10 md:px-16">
+          <div class="w-full md:w-[50%] shadow-md relative flex justify-start gap-3 rounded-md bg-[#ffffff59] items-center overflow-hidden">
+            <img src="images/frame.jpg" class="w-16 h-16 object-cover" alt="">
+            <a href="#" class=" text-slate-200 capitalize hover:underline">support the louvre</a>
+            <span class="material-symbols-outlined text-slate-200 absolute right-2">
+              chevron_right
+              </span>
+          </div>
+          <div class="w-full md:w-[50%] shadow-md relative flex justify-start gap-3 rounded-md bg-[#ffffff59] items-center overflow-hidden">
+            <img src="images/leonard-de.png" class="w-16 h-16 object-cover" alt="">
+            <a href="#" class=" text-slate-200 capitalize hover:underline">e-boutique</a>
+            <span class="material-symbols-outlined text-slate-200 absolute right-2">
+              chevron_right
+              </span>
+          </div>
+      </div>
+      <hr>
+      <div class="w-full flex flex-col justify-center items-center gap-4 py-10 ">
+        <div class="flex flex-row md:gap-7 gap-4">
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-facebook text-xl text-slate-200"></i>
+          </div>
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-youtube text-xl text-slate-200"></i>
+          </div>
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-instagram text-xl text-slate-200"></i>
+          </div>
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-twitter text-xl text-slate-200"></i>
+          </div>
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-pinterest text-xl text-slate-200"></i>
+          </div>
+          <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+            <i class="fa fa-linkedin text-xl text-slate-200"></i>
+          </div>
+        </div>
+        <div class="mt-4">
+          <h2 class="text-4xl text-slate-300 capitalize">louvre</h2>
+        </div>
+      </div>
+
+    </menu>
+    <!-- Navbar start -->
+    <div
+      class="md:w-full w-full py-3 px-8 bg-slate-700 drop-shadow-md flex justify-between items-center"
+    >
+      <div class="flex justify-center items-center gap-8">
+        <span 
+        id="hamBurger"
+          class="material-symbols-outlined text-white text-3xl cursor-pointer"
+        >
+          menu_open
+        </span>
+        <!-- <h3 class="text-2xl capitalize text-white hidden md:block cursor-pointer">menu</h3> -->
+        <select class="bg-slate-700 text-slate-300 hidden md:block">
+          <option value="" class="bg-slate-500">Langues</option>
+          <option value="">English</option>
+          <option value="">Esponal</option>
+          <option value="">China</option>
+        </select>
+      </div>
+      <div class="logo text-4xl text-slate-200">
+        <a href="">Louvre</a>
+      </div>
+      <div class="flex justify-center items-center gap-3">
+        <button
+          class="w-[10rem] md:block hidden text-slate-300 capitalize p-2 border-2 border-slate-700 hover:border-2 flex justify-center gap-2 items-center hover:border-slate-300 rounded-full"
+        >
+          <span class="material-symbols-outlined text-slate-300 text-sm -mt-1">
+            work_history
+          </span>
+          <span>online boutique</span>
+        </button>
+        <button
+          class="md:w-[10rem] sm:w-[8.87rem] text-slate-100 capitalize p-2 bg-emerald-500 rounded-full hover:bg-emerald-700 flex justify-center items-center gap-2"
+        >
+          <span class="material-symbols-outlined text-slate-200 text-sm -mt-1">
+            aod
+          </span>
+          <span>tickets</span>
+        </button>
+      </div>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- nav menu start  -->
+    <div
+      class="flex justify-center items-center w-full bg-slate-700 gap-8 py-5"
+    >
+      <a
+        href="#"
+        class="text-slate-200 text-xl uppercase border-b-2 border-slate-700 hover:border-b-2 hover:border-slate-100"
+        >visit</a
+      >
+      <a
+        href="#"
+        class="text-slate-200 text-xl uppercase border-b-2 border-slate-700 hover:border-b-2 hover:border-slate-100"
+        >explore</a
+      >
+      <a
+        href="#"
+        class="text-slate-200 text-xl uppercase border-b-2 border-slate-700 hover:border-b-2 hover:border-slate-100"
+        >what's on</a
+      >
+    </div>
+    <!-- nav menu end  -->
+    <!-- topbar  -->
+
+    <!-- banner review -->
+    <div class="w-full relative z-0 mb-12">
+      <video
+        class="w-full h-[32rem] relative object-cover"
+        preload="auto"
+        style="pointer-events: none;"
+        playsinline
+        autoplay
+        loop
+      >
+        <source src="video/video.mp4" type="video/mp4" />
+      </video>
+      
+      <div class="absolute w-full top-24 left-0 md:text-center flex justify-start items-center flex-col md:flex md:flex-col md:justify-self-start md:items-center">
+        <h1 class="text-slate-100 font-bold drop-shadow-md text-4xl md:text-8xl">
+          ESCAPE WITH THE LOUVRE
+        </h1>
+        <button
+          type="button"
+          class="w-60 py-3 flex justify-center items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-slate-100 rounded-full capitalize text-lg md:text-xl"
+        >
+          <span class="material-symbols-outlined text-md -mt-1"> aod </span>
+          <span>boot tickets</span>
+        </button>
+      </div>
+      <div class="absolute md:top-[28rem] top-[27rem] left-8 md:left-[24%] text-slate-200 w-full">
+        <span class="text-slate-200"
+          >The museum is open today from 9:00 AM to 6:00 PM</span
+        >
+        |
+        <a href="#" class="ml-3 border-b-2 border-slate-50 hover:border-none">
+          <span>See list of available galleries</span>
+          <span class="material-symbols-outlined"> arrow_forward </span>
+        </a>
+      </div>
+    </div>
+    <!-- banner review -->
+
+    <!-- wraper -->
+    <div class="p-16">
+      <div class="text w-96">
+        <h1 class="text-5xl">HIGHLIGHTS</h1>
+      </div>
+    </div>
+    <!-- Swiper -->
+    <div class="galleryContainer mb-5">
+      <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow">
+          <span class="arrow arrowLeft"></span>
+        </div>
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow">
+          <span class="arrow arrowRight"></span>
+        </div>
+        <div class="captionTextHolder">
+          <p class="captionText slideTextFromTop"></p>
+        </div>
+        <div class="imageHolder">
+          <img
+            class="bg-cover relative object-cover hover:scale-110 hover:ease-in"
+            src="images/leonard-de.png"
+          />
+          <p class="captionText"></p>
+          <div class="absolute left-14 top-64 text-slate-100">
+            <span class="uppercase text-xl">guided tours</span>
+            <h3 class="text-6xl uppercase mt-4">welcome to the louvre</h3>
+            <strong class="capitalize mt-8"
+              >every monday, friday, saturday and sunday at 11 a.m.</strong
+            >
+          </div>
+        </div>
+        <div class="imageHolder">
+          <img class="bg-cover object-cover" src="images/leonard3.jpg" />
+          <p class="captionText"></p>
+          <div class="absolute left-14 top-64 text-slate-100">
+            <span class="uppercase text-xl">guided tours</span>
+            <h3 class="text-6xl uppercase mt-4">another louvre</h3>
+            <strong class="capitalize mt-8"
+              >enjoy a visit away from the crewds and discover the lesser-known
+              treasures and stunning settings of'another louvre</strong
+            >
+          </div>
+        </div>
+        <div class="imageHolder">
+          <img class="bg-cover object-cover" src="images/veste.jpg" />
+          <p class="captionText"></p>
+          <div class="absolute left-14 top-44 text-slate-100">
+            <span class="uppercase text-xl text-red-500">exhibition</span>
+            <h3 class="text-6xl uppercase mt-4 text-rose-500 drop-shadow-md">
+              yves saint laurent at the louvre
+            </h3>
+            <strong class="capitalize mt-8 text-rose-500"
+              >from 29 january to 19 september 2022</strong
+            >
+          </div>
+        </div>
+        <div class="imageHolder">
+          <img class="bg-cover object-cover" src="images/leonard4.jpg" />
+          <p class="captionText"></p>
+          <div class="absolute left-14 top-64 text-slate-100">
+            <span class="uppercase text-xl">guided tours</span>
+            <h3 class="text-6xl uppercase mt-4">the gardens</h3>
+            <strong class="capitalize mt-8"
+              >a breath of fresh air in the heart of paris</strong
+            >
+          </div>
+        </div>
+      </div>
+      <div id="dotsContainer"></div>
+    </div>
+    <!-- text -->
+    <div class="w-full p-8 md:p-24">
+      <h2>WELCOME TO THE LOUVRE</h2>
+      <span class="md:text-5xl text-xl mt-3 text-slate-600 leading-loose">
+        There are plenty of good reasons to visit the Louvre! So many works of
+        art to discover in this fabulous museum that used to be a palace! So
+        plan your visit in advance to make the most of it. Why not pick one of
+        our visitor trails to follow a theme-based tour? And when you need a
+        break, where better than the museum’s restful gardens?
+      </span>
+    </div>
+    <!-- text -->
+
+    <!-- background fixed -->
+    <div
+      style="
+        background-image: url('images/frame.jpg');
+        background-attachment: fixed;
+      "
+      class="w-full h-[25rem] bg-cover mb-32"
+    ></div>
+    <!-- background fixed -->
+
+    <!-- at home -->
+    <div class="home w-full px-4 md:px-20 mb-16">
+      <div class="at-head">
+        <span class="text-slate-500 text-5xl md:text-7xl">LOUVRE AT HOME</span>
+      </div>
+      <div class="md:grid flex flex-col md:grid-cols-4 md:grid-flow-col gap-4">
+        <div
+          class="md:w-[17rem] w-full cursor-pointer hover:scale-105 hover:ease-in duration-300 relative h-[22rem] rounded-md overflow-hidden bg-slate-600"
+        >
+          <img
+            class="w-full object-cover h-full opacity-70"
+            src="images/at-home1.png"
+            alt=""
+          />
+          <button
+            class="w-auto px-6 rounded-md bg-slate-100 text-lg py-1 text-center capitalize text-slate-600 absolute top-4 left-4"
+          >
+            stories
+          </button>
+          <div class="text absolute bottom-4 left-4 text-slate-200">
+            <h2 class="text-2xl uppercase">myths and legends</h2>
+            <span class="capitalize"
+              >come with us into the louvre's collactions - hear the hidden
+              stories behind their works of art!</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="md:w-[17rem] w-full cursor-pointer hover:scale-105 hover:ease-in duration-300 relative h-[22rem] rounded-md overflow-hidden bg-slate-600"
+        >
+          <img
+            class="w-full object-cover h-full opacity-70"
+            src="images/aux.jpg"
+            alt=""
+          />
+          <button
+            class="w-auto px-6 rounded-md bg-slate-100 text-lg py-1 text-center capitalize text-slate-600 absolute top-4 left-4"
+          >
+            louvre kids
+          </button>
+          <div class="text absolute bottom-4 left-4 text-slate-200">
+            <h2 class="text-2xl uppercase">
+              stories about the louver and its artworks
+            </h2>
+            <span class="capitalize"
+              >tales about the museum’s masterpieces</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="md:w-[17rem] w-full cursor-pointer hover:scale-105 hover:ease-in duration-300 relative h-[22rem] rounded-md overflow-hidden bg-slate-600"
+        >
+          <img
+            class="w-full object-cover h-full opacity-70"
+            src="images/at-home3.png"
+            alt=""
+          />
+          <button
+            class="w-auto px-6 rounded-md bg-slate-100 text-lg py-1 text-center capitalize text-slate-600 absolute top-4 left-4"
+          >
+            virtual tours
+          </button>
+          <div class="text absolute bottom-4 left-4 text-slate-200">
+            <h2 class="text-2xl uppercase">
+              visit the museum rooms and galleries
+            </h2>
+            <span class="capitalize">enjoy the view!</span>
+          </div>
+        </div>
+
+        <div
+          class="md:w-[17rem] w-full cursor-pointer hover:scale-105 hover:ease-in duration-300 relative h-[22rem] rounded-md overflow-hidden bg-slate-600"
+        >
+          <img
+            class="w-full object-cover h-full opacity-70"
+            src="images/at-home4.png"
+            alt=""
+          />
+          <button
+            class="w-auto px-8 rounded-md bg-slate-100 text-lg py-1 text-center capitalize text-slate-600 absolute top-4 left-4"
+          >
+            vr
+          </button>
+          <div class="text absolute bottom-4 left-4 text-slate-200">
+            <h2 class="text-2xl uppercase">mona lisa: beyond the glass</h2>
+            <span class="capitalize"> download the app </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- at home -->
+
+    <!-- Explore  -->
+    <div
+      class="md:w-full h-[50rem] md:h-auto bg-slate-900 px-20 pt-10 overflow-hidden scroll-pb-16 mb-8 mt-8"
+    >
+      <div class="flex relative justify-center items-center flex-col gap-2">
+        <h1 class="md:text-6xl text-4xl text-slate-200 uppercase text-center">
+          delve into the louvre
+        </h1>
+        <div class="grid grid-rows-4 grid-flow-col gap-2 md:gap-4">
+          <div class="m-4">
+            <img src="images/pro1.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro2.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro3.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro4.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro5.jpg" alt="" />
+          </div>
+          <div class="m-2 -mt-24">
+            <img class="h-[27rem] object-cover" src="images/pro6.jpg" alt="" />
+          </div>
+          <div class="m-2 -mt-10">
+            <img src="images/pro7.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro8.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro9.jpg" alt="" />
+          </div>
+          <div class="m-2">
+            <img src="images/pro10.jpg" alt="" />
+          </div>
+        </div>
+        <button
+          type="button"
+          class="absolute left-[40%] capitalize w-40 h-auto rounded-full py-3 bottom-10 bg-slate-100 hover:bg-slate-300 text-slate-900 texl-xl"
+        >
+          explore
+        </button>
+      </div>
+    </div>
+    <!-- Explore  -->
+
+    <!-- things -->
+    <div class="w-full bg-slate-50 py-10 px-20">
+      <div class="px-24">
+        <h1 class="text-slate-500 text-3xl md:text-6xl">THINGS TO SEE</h1>
+      </div>
+      <div>
+        <div class="slider md:w-[87%] w-full mt-8" id="slider">
+          <div class="slide flex justify-center items-center gap-8" id="slide">
+            
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/pro10.jpg" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/pro4.jpg" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/pro6.jpg" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/pro10.jpg" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+            <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                  <div class="flex justify-center items-center gap-8">
+                    <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                    <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                  </div>
+                  <div>
+                    <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                      more_vert
+                      </span>
+                  </div>
+                </div>
+                <div class="absolute top-32 left-56 cursor-pointer">
+                  <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                    youtube_activity
+                    </span>
+                </div>
+            </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                  <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                    <div class="flex justify-center items-center gap-8">
+                      <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                      <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                        more_vert
+                        </span>
+                    </div>
+                  </div>
+                  <div class="absolute top-32 left-56 cursor-pointer">
+                    <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                      youtube_activity
+                      </span>
+                  </div>
+              </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                  <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                    <div class="flex justify-center items-center gap-8">
+                      <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                      <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                        more_vert
+                        </span>
+                    </div>
+                  </div>
+                  <div class="absolute top-32 left-56 cursor-pointer">
+                    <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                      youtube_activity
+                      </span>
+                  </div>
+              </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                  <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                    <div class="flex justify-center items-center gap-8">
+                      <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                      <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                        more_vert
+                        </span>
+                    </div>
+                  </div>
+                  <div class="absolute top-32 left-56 cursor-pointer">
+                    <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                      youtube_activity
+                      </span>
+                  </div>
+              </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                  <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                    <div class="flex justify-center items-center gap-8">
+                      <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                      <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                        more_vert
+                        </span>
+                    </div>
+                  </div>
+                  <div class="absolute top-32 left-56 cursor-pointer">
+                    <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                      youtube_activity
+                      </span>
+                  </div>
+              </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  <img class="w-full h-full bg-cover object-cover" src="images/at-home3.png" alt="">
+                  <div class="flex justify-between w-[30rem] items-center gap-2 absolute top-4 left-4">
+                    <div class="flex justify-center items-center gap-8">
+                      <img class="w-10 h-10 opacity-70 rounded-full drop-shadow-md cursor-pointer" src="images/pro8.jpg" alt="">
+                      <span class="text-slate-200 capitalize text-xl">promenade a la decouverte....</span>
+                    </div>
+                    <div>
+                      <span class="material-symbols-outlined cursor-pointer text-4xl text-slate-200">
+                        more_vert
+                        </span>
+                    </div>
+                  </div>
+                  <div class="absolute top-32 left-56 cursor-pointer">
+                    <span class="material-symbols-outlined text-[red] drop-shadow-md text-8xl">
+                      youtube_activity
+                      </span>
+                  </div>
+              </div>
+              <div class="w-[33rem] h-[70rem] relative bg-slate-700 rounded-md overflow-hidden ">
+                  
+              </div>
+
+          </div>
+          <button class="ctrl-btn pro-prev">
+            <span class="material-symbols-outlined text-4xl text-slate-700">
+              arrow_circle_left
+              </span>
+          </button>
+          <button class="ctrl-btn pro-next">
+            <span class="material-symbols-outlined text-4xl text-slate-700">
+              arrow_circle_right
+              </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- things -->
+
+<!-- footer  -->
+    <footer class="w-full bg-black mt-40 md:h-[23rem] h-auto drop-shadow-lg flex flex-col md:grid md:grid-cols-3 py-2 px-20 md:place-content-start">
+        <div class="w-[25rem] h-52 p-4 flex flex-col">
+          <h2 class="text-slate-200 uppercase text-xl">about</h2>
+          <a href="#" class="text-slate-200 hover:underline mt-4">The Louvre in France and around the world</a>
+          <a href="#" class="text-slate-200 hover:underline">Visitor rules</a>
+          <a href="#" class="text-slate-200 hover:underline">Loans and long-term loans</a>
+        </div>
+        <div class="w-[25rem] h-52 p-4 grid grid-cols-2 text-slate-200">
+          <div class="flex flex-col">
+            <h2 class="uppercase text-xl">OUR WEBSITES</h2>
+            <a href="#" class="mt-4 hover:underline">Online ticketing service</a>
+            <a href="#" class="mt-3 hover:underline">Online Boutique</a>
+            <a href="#" class="mt-3 hover:underline">Collection</a>
+            <a href="#" class="mt-3 hover:underline">Corpus</a>
+            <a href="#" class="mt-3 hover:underline">Publications</a>
+            <a href="#" class="mt-3 hover:underline">Donate</a>
+            <a href="#" class="mt-3 hover:underline">Petite Galerie</a>
+            <a href="#" class="mt-3 hover:underline">Press</a>
+          </div>
+          <div class="flex flex-col">
+            <h2 class="uppercase text-xl">contact</h2>
+            <a href="#" class="mt-4 hover:underline">FAQ</a>
+            <a href="#" class="mt-3 hover:underline">Contact us</a>
+            <a href="#" class="mt-3 hover:underline">Give us your feedback!</a>
+            <a href="#" class="mt-3 hover:underline">Jobs (in French)</a>
+            <a href="#" class="mt-3 hover:underline">Private event and film shoots</a>
+          </div>
+        </div>
+        <div class="w-[25rem] h-52 p-4 md:mt-0 mt-32  text-slate-200">
+          <h2 class="uppercase text-xl">FOLLOW US</h2>
+          <div class="flex justify-center items-center gap-4 py-8">
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-facebook text-xl"></i>
+            </div>
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-youtube text-xl"></i>
+            </div>
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-instagram text-xl"></i>
+            </div>
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-twitter text-xl"></i>
+            </div>
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-pinterest text-xl"></i>
+            </div>
+            <div class="w-11 h-11 cursor-pointer flex justify-center items-center rounded-full border-2 hover:border-slate-100 border-[#dddddd79]">
+              <i class="fa fa-linkedin text-xl"></i>
+            </div>
+          </div>
+          <div class="mt-16">
+            <h2 class="text-xl">MEMBERSHIP</h2>
+            <h2 class="text-4xl mt-4">Amis du Louvre</h2>
+            <a href="#" class="text-md hover:underline mt-4">Become a Friend of the Louvre (in French) </a>
+          </div>
+        </div>
+      </footer>
+      <hr class="text-slate-600 md:block hidden">
+      <div class="w-full h-auto flex flex-col gap-8 pb-5 justify-center items-center bg-black py-36 md:py-4 px-2">
+        <div class="flex justify-center items-center gap-4">
+            <a href="#" class="text-md capitalize hover:underline text-slate-200">Legal Notice</a>
+            <a href="#" class="text-md capitalize hover:underline text-slate-200">privacy</a>
+            <a href="#" class="text-md capitalize hover:underline text-slate-200">cookies</a>
+            <a href="#" class="text-md capitalize hover:underline text-slate-200">credits (in french)</a>
+            <a href="#" class="text-md capitalize hover:underline text-slate-200">Copyrights</a>
+        </div>
+        <hr>
+        <img src="images/Logo_Pierre_Bernard.jpg" alt="">
+        <div></div>
+      </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

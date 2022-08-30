@@ -1,0 +1,12 @@
+
+#menu {
+    left: -100%;
+}
+
+#menu.active {
+    left: 0;
+}
+
+hr {
+    color:#777;
+}
